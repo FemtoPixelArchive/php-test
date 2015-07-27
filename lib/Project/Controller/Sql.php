@@ -10,8 +10,8 @@ class Sql
     {
         if (!$this->model) {
             $this->model = new \Project\Model\Sql();
-            if (class_exists('\Release\Sql\Answer')) {
-                $this->model->setAnswer(new \Release\Sql\Answer());
+            if (class_exists('\Release\Sql')) {
+                $this->model->setAnswer(new \Release\Sql());
             }
         }
         return $this->model;
@@ -19,6 +19,7 @@ class Sql
 
     public function indexAction()
     {
+        $algo = \Framework\Basepath::get() . 'algo';
         $debug = \Framework\Basepath::get() . 'debug';
         $home = \Framework\Basepath::get();
         echo <<<HEREDOC
@@ -29,6 +30,9 @@ class Sql
     </li>
     <li>
         <a href="$debug">Debug</a>
+    </li>
+    <li>
+        <a href="$algo">Algo</a>
     </li>
 </ul>
 HEREDOC;

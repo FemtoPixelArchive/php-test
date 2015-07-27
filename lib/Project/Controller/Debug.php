@@ -19,6 +19,7 @@ class Debug
 
     public function indexAction()
     {
+        $algo = \Framework\Basepath::get() . 'algo';
         $sql = \Framework\Basepath::get() . 'sql';
         $home = \Framework\Basepath::get();
         echo <<<HEREDOC
@@ -29,6 +30,9 @@ class Debug
     </li>
     <li>
         <a href="$sql">Sql</a>
+    </li>
+    <li>
+        <a href="$algo">Algo</a>
     </li>
 </ul>
 HEREDOC;
