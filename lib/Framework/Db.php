@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Jay
- * Date: 24/07/2015
- * Time: 22:52
- */
-
 namespace Framework;
 
 
@@ -16,7 +9,7 @@ final class Db
     public function execute($sql)
     {
         $statement = $this->getPdo()->prepare($sql);
-        $this->getPdo()->exec($statement);
+        $statement->execute();
         return $statement->fetchAll();
     }
 
