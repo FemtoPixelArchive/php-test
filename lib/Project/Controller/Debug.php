@@ -19,9 +19,9 @@ class Debug
 
     public function indexAction()
     {
-        $algo = \Framework\Basepath::get() . 'algo';
-        $sql = \Framework\Basepath::get() . 'sql';
-        $home = \Framework\Basepath::get();
+        $algo = \Nano\Basepath::get() . 'algo';
+        $sql = \Nano\Basepath::get() . 'sql';
+        $home = \Nano\Basepath::get();
         echo <<<HEREDOC
 <h1>Debug exam</h1>
 <ul>

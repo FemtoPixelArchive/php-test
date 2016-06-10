@@ -4,7 +4,7 @@ namespace Project\Model;
 use \Project\Mock\Sql as Mock;
 use \Project\Interfaces\AnswerSql;
 
-final class Sql extends \Framework\Model
+final class Sql extends \Nano\Model
 {
     private $answer;
 

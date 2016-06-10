@@ -6,9 +6,9 @@ class Index
 {
     public function indexAction()
     {
-        $sql = \Framework\Basepath::get() . 'sql';
-        $debug = \Framework\Basepath::get() . 'debug';
-        $algo = \Framework\Basepath::get() . 'algo';
+        $sql = \Nano\Basepath::get() . 'sql';
+        $debug = \Nano\Basepath::get() . 'debug';
+        $algo = \Nano\Basepath::get() . 'algo';
         echo <<<END
 <h1>Bienvenue</h1>
 <ul>

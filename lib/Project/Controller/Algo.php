@@ -15,9 +15,9 @@ class Algo
 
     public function indexAction()
     {
-        $sql = \Framework\Basepath::get() . 'sql';
-        $debug = \Framework\Basepath::get() . 'debug';
-        $home = \Framework\Basepath::get();
+        $sql = \Nano\Basepath::get() . 'sql';
+        $debug = \Nano\Basepath::get() . 'debug';
+        $home = \Nano\Basepath::get();
         echo <<<END
 <h1>Algo</h1>
 <ul>

@@ -2,7 +2,6 @@
   "autoload": {
     "psr-4":{
       "Project\\": "lib/Project",
-      "Framework\\": "lib/Framework",
       "Release\\": "lib/Release"
     }
   }

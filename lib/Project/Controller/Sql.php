@@ -19,9 +19,9 @@ class Sql
 
     public function indexAction()
     {
-        $algo = \Framework\Basepath::get() . 'algo';
-        $debug = \Framework\Basepath::get() . 'debug';
-        $home = \Framework\Basepath::get();
+        $algo = \Nano\Basepath::get() . 'algo';
+        $debug = \Nano\Basepath::get() . 'debug';
+        $home = \Nano\Basepath::get();
         echo <<<HEREDOC
 <h1>Sql exam</h1>
 <ul>
