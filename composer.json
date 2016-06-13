@@ -4,5 +4,8 @@
       "Project\\": "lib/Project",
       "Release\\": "lib/Release"
     }
+  },
+  "require": {
+    "femtopixel/nano-framework": "^0.2.1"
   }
 }
